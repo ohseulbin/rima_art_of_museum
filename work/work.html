@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>리마미술관 | 작품</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../common/images/favicon-32x32.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="../common/images/favicon-96x96.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../common/images/favicon-16x16.png">
+        <!-- css -->
+        <link rel="stylesheet" href="../common/css/style.css">
+        <link rel="stylesheet" href="../common/css/font.css">
+        <link rel="stylesheet" href="work.css">
+        <!-- js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer="defer" src="../common/js/style.js"></script>
+        <script defer="defer" src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+        <script defer="defer" src="../common/js/isotope.pkgd.min.js"></script>
+    </head>
+
+    <body
+        oncontextmenu="return false"
+        ondragstart="return false"
+        onselectstart="return false">
+
+        <!-- header -->
+        <header>
+            <h1>
+                <a href="../index.html"><img src="../common/images/logo.png" alt="logo"></a>
+            </h1>
+            <ul id="gnb">
+                <li>
+                    <a
+                        href="../about/about.html"
+                        onmouseover="this.innerHTML='ABOUT'"
+                        onmouseout="this.innerHTML='소개'">소개</a>
+                </li>
+                <li>
+                    <a
+                        href="../work/work.html"
+                        onmouseover="this.innerHTML='WORK'"
+                        onmouseout="this.innerHTML='작품'">작품</a>
+                </li>
+                <li>
+                    <a
+                        href="../artist/artist.html"
+                        onmouseover="this.innerHTML='ARTIST'"
+                        onmouseout="this.innerHTML='작가'">작가</a>
+                </li>
+                <li>
+                    <a
+                        href="../auction/auction.html"
+                        onmouseover="this.innerHTML='R.AUCTION'"
+                        onmouseout="this.innerHTML='R.옥션'">R.옥션</a>
+                </li>
+            </ul>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="sign">
+                    <a href="../sign/sign_in.html">로그인</a>
+                    <a href="../sign/sign_up.html">회원가입</a>
+                </div>
+                <a href="../about/about.html" id="top">미술관소개</a>
+                <a href="#">멤버십안내</a>
+                <a href="../notice/notice.html">공지사항</a>
+                <a href="http://rimaon.dothome.co.kr/faq">FAQ</a>
+                <hr>
+                <a href="http://rimaon.com/">company</a>
+                <a href="https://www.instagram.com/rimaholdings/">instagram</a>
+                <a href="https://www.facebook.com/rimaholdings/">facebook</a>
+                <a href="https://blog.naver.com/rimaholdings">blog</a>
+            </div>
+
+            <span id="menu" onclick="openNav()">
+                <img
+                    src="../common/images/sitemap.png"
+                    onmouseover="this.src='../common/images/sitemap_.jpg'"
+                    onmouseout="this.src='../common/images/sitemap.png'">
+            </span>
+        </header>
+
+        <!-- main -->
+        <main>
+            <!-- btn -->
+            <ul class="btn">
+                <li class="on">
+                    <a href="#" data-filter="*">전체</a>
+                </li>
+                <li>
+                    <a href="#" data-filter=".paint">평면</a>
+                </li>
+                <li>
+                    <a href="#" data-filter=".solid">입체</a>
+                </li>
+                <li>
+                    <a href="#" data-filter=".media">미디어</a>
+                </li>
+                <li>
+                    <a href="#" data-filter=".digital">디지털</a>
+                </li>
+            </ul>
+
+            <!-- project_item -->
+            <div class="project_item">
+                <!-- 김가을 -->
+                <div class="item item1 paint">
+                    <a
+                        href="../project/cell.html">
+                        <div class="img"></div>
+                        <h2>세포</h2>
+                        <p>김가을</p>
+                    </a>
+                </div>
+                <div class="item item2 paint">
+                    <a
+                        href="../project/lump.html">
+                        <div class="img"></div>
+                        <h2>무더기</h2>
+                        <p>김가을</p>
+                    </a>
+                </div>
+                <div class="item item3 paint">
+                    <a href="../project/manipulation.html">
+                        <div class="img"></div>
+                        <h2>조작</h2>
+                        <p>김가을</p>
+                    </a>
+                </div>
+                <div class="item item4 paint">
+                    <a href="../project/shore.html">
+                        <div class="img"></div>
+                        <h2>뭍</h2>
+                        <p>김가을</p>
+                    </a>
+                </div>
+                <div class="item item5 paint">
+                    <a href="../project/us.html">
+                        <div class="img"></div>
+                        <h2>우리</h2>
+                        <p>김가을</p>
+                    </a>
+                </div>
+                <!-- 심미혜 -->
+                <div class="item item6 media">
+                    <a href="../project/Fresh.html">
+                        <div class="img"></div>
+                        <h2>Fresh coming out</h2>
+                        <p>심미혜</p>
+                    </a>
+                </div>
+                <div class="item item7 media">
+                    <a href="../project/stop.html">
+                        <div class="img"></div>
+                        <h2>우리는 지금 #STOP ASIAN HATE의 시대를 살고있다</h2>
+                        <p>심미혜</p>
+                    </a>
+                </div>
+                <div class="item item8 media">
+                    <a href="../project/Sunflower.html">
+                        <div class="img"></div>
+                        <h2>해바라기씨 인간과 쥐새끼들</h2>
+                        <p>심미혜</p>
+                    </a>
+                </div>
+                <div class="item item9 media">
+                    <a href="../project/Hey.html">
+                        <div class="img"></div>
+                        <h2>헤이, 아보카도 맨</h2>
+                        <p>심미혜</p>
+                    </a>
+                </div>
+                <div class="item item10 media">
+                    <a href="../project/skin.html">
+                        <div class="img"></div>
+                        <h2>피부는 피부지 바보야</h2>
+                        <p>심미혜</p>
+                    </a>
+                </div>
+                <!-- 김은지 -->
+                <!-- <div class="item item11 paint">
+                    <a
+                        href="../project/aperture.html">
+                        <div class="img"></div>
+                        <h2>틈, 사이</h2>
+                        <p>김은지</p>
+                    </a>
+                </div>
+                <div class="item item12 paint">
+                    <a
+                        href="../project/crowd01.html">
+                        <div class="img"></div>
+                        <h2>군중</h2>
+                        <p>김은지</p>
+                    </a>
+                </div>
+                <div class="item item13 paint">
+                    <a href="../project/crowd02.html">
+                        <div class="img"></div>
+                        <h2>군중</h2>
+                        <p>김은지</p>
+                    </a>
+                </div>
+                <div class="item item14 paint">
+                    <a href="../project/infection01.html">
+                        <div class="img"></div>
+                        <h2>감염</h2>
+                        <p>김은지</p>
+                    </a>
+                </div>
+                <div class="item item15 paint">
+                    <a href="../project/infection02.html">
+                        <div class="img"></div>
+                        <h2>감염</h2>
+                        <p>김은지</p>
+                    </a>
+                </div> -->
+                <!-- 이지영 -->
+                <!-- <div class="item item16 paint">
+                    <a href="../project/flow01.html">
+                        <div class="img"></div>
+                        <h2>흐름</h2>
+                        <p>이지영</p>
+                    </a>
+                </div>
+                <div class="item item17 paint">
+                    <a href="../project/flow02.html">
+                        <div class="img"></div>
+                        <h2>흐름</h2>
+                        <p>이지영</p>
+                    </a>
+                </div>
+                <div class="item item18 paint">
+                    <a href="../project/flow03.html">
+                        <div class="img"></div>
+                        <h2>흐름</h2>
+                        <p>이지영</p>
+                    </a>
+                </div>
+                <div class="item item19 paint">
+                    <a href="../project/flow04.html">
+                        <div class="img"></div>
+                        <h2>흐름</h2>
+                        <p>이지영</p>
+                    </a>
+                </div> -->
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="company">
+                <p>주식회사 리마</p>
+                <div class="menu">
+                    <a href="http://rimaon.com/team">회사소개</a>
+                    <a href="http://rimaon.com/news">공지사항</a>
+                    <a href="http://rimaon.com/faq">FAQ</a>
+                </div>
+            </div>
+
+            <div class="info">
+                <p>(주)리마 대표이사 차윤서 | 사업자등록번호 : 203-81-67268 | 통신판매업신고번호 2022-화성봉담-0082
+                    <br>
+                    경기도 화성시 봉담읍 와우안길 17 수원대학교 고운첨단과학기술연구원 507호
+                    <br>
+                    <a href="tel:031-225-3339">T 031-225-3339</a>
+                    |
+                    <a href="mailto:rimaon@naver.com">E-mail rimaon@naver.com</a>
+                    <br>
+                    사이트 문의) 담당자 오슬빈
+                </p>
+            </div>
+
+            <div class="footer_menu">
+                <a href="#">개인정보 처리방침</a>
+                <span>|</span>
+                <a href="#">이용약관</a>
+                <span>|</span>
+                <a href="#">저작권정책</a>
+            </div>
+
+            <p>Copyright ⓒ 2020 (주)리마 All rights reserved.</p>
+            <div class="sns">
+                <a href="https://www.instagram.com/rimaholdings/"></a>
+                <a href="https://www.facebook.com/rimaholdings/"></a>
+            </div>
+        </footer>
+
+        <script>
+            $(document).ready(function () {
+                $('.project_item').isotope({itemSelector: '.item'});
+
+                $('.btn').on('click', 'li', function () {
+                    var filterValue = $(this)
+                        .children()
+                        .attr('data-filter');
+                    $('.project_item').isotope({filter: filterValue});
+                    $('.btn li').removeClass('on');
+                    $(this).addClass('on');
+                });
+            });
+        </script>
+    </body>
+</html>
